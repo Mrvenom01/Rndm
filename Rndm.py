@@ -175,7 +175,7 @@ def approval():
   print("\033[1;37m [] YOUR KEY:\x1b[1;92m \n"+key);time.sleep(0.1)
   print ("""\033[1;37m===============================================""")
   try:
-    httpCaht = requests.get("https://github.com/Kavihacker/hacker/blob/main/Aprl.txt").text
+    httpCaht = requests.get("https://github.com/Mrvenom01/Approval/blob/main/Approval.txt").text
     if id in httpCaht:
       sawrojj("\033[1;97m [] CONGRALUTATIONS !!!YOUR KEY WAS APROVED")
       msg = str(os.geteuid())
