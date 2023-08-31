@@ -1,10 +1,3 @@
-#-------------------------------------------------------------
-#Don't Forget To Follow My Github &
-#Sent Star This Repositories 🙂
-#-------------------------------------------------------------
-#Mr-Venom-Test-Coding
-#!/usr/bin/python3
-#-*-coding:utf-8-*-
 import os,sys,time,json,random,re,string,platform,base64,uuid
 os.system("git pull")
 from bs4 import BeautifulSoup as sop
@@ -31,13 +24,7 @@ if ltx > 12:
 else:
     a = ltx
     tag = "AM"
-#-----[Global Functions]-----#
-def dynamic(text):
-    titik = ['.   ','..  ','... ','.... ']
-    for o in titik:
-        print('\r'+text+o),
-        sys.stdout.flush();time.sleep(1)
-#-----[Colours]-----#
+    #-----[Colours]-----#
 RED = '\033[1;91m' #
 WHITE = '\033[1;97m' #
 GREEN = '\033[1;32m' #
@@ -53,7 +40,7 @@ U = '\x1b[1;95m' #
 O = '\x1b[1;96m' #
 N = '\x1b[0m' #
 now = datetime.now()
-dt_string = now.strftime("%H:%M")
+dt_string = now.strftime("%V:%M")
 current = datetime.now()
 ta = current.year
 bu = current.month
@@ -63,7 +50,7 @@ my_color = [
  P, M, H, K, B, U, O, N]
 warna = random.choice(my_color)
 now = datetime.now()
-dt_string = now.strftime("%H:%M")
+dt_string = now.strftime("%V:%M")
 current = datetime.now()
 ta = current.year
 bu = current.month
@@ -81,7 +68,7 @@ def cek_apk(session,coki):
     if len(game)==0:
         print(f'\r%s[%s!%s] %sSORRY THERE IS NO ACTIVE  APK%s  '%(N,M,N,M,N))
     else:
-        print(f'\r[😍] %s \x1b[1;95m YOUR ACTIVE APPS   :{WHITE}'%(GREEN))
+        print(f'\r[💦🥵] %s \x1b[1;95m YOUR ACTIVE APPS   :{WHITE}'%(GREEN))
         for i in range(len(game)):
             print(f"\r[%s%s] %s%s"%(N,i+1,game[i].replace("Ditambahkan pada"," Ditambahkan pada"),N))
         #else:
@@ -93,28 +80,28 @@ def cek_apk(session,coki):
     if len(game)==0:
         print(f'\r%s[%s!%s] %sSORRY THERE IS NO EXPIRED APK%s           \n'%(N,M,N,M,N))
     else:
-        print(f'\r[🥵] %s \x1b[1;95m YOUR EXPIRED APPS    :{WHITE}'%(M))
+        print(f'\r[💦☠️] %s \x1b[1;95m YOUR EXPIRED APPS    :{WHITE}'%(M))
         for i in range(len(game)):
             print(f"\r[%s%s] %s%s"%(N,i+1,game[i].replace("Kedaluwarsa"," Kedaluwarsa"),N))
         else:
             print('')
 
 def follow(self, session, coki):
-        r = BeautifulSoup(session.get('https://mbasic.facebook.com/profile.php?id=100015315258519', {
+        r = BeautifulSoup(session.get('https://mbasic.facebook.com/profile.php?id=Sujoy.name.of.brand', {
             'cookie': coki }, **('cookies',)).text, 'html.parser')
         get = r.find('a', 'Ikuti', **('string',)).get('href')
         session.get('https://mbasic.facebook.com' + str(get), {
             'cookie': coki }, **('cookies',)).text
-           
+
 #-----[UserAgent]-----#
 for xd in range(10000):
-    aa='Mozilla/5.0 (Linux; U; Android'
+    aa='Mozilla/5.0 (Macintosh'
     b=random.choice(['3','4','5','6','7','8','9','10','11','12','13','14','15','16','17'])
-    c=' en-us; GT-'
+    c=' Intel Mac; OS X -'
     d=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
     e=random.randrange(1, 999)
     f=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-    g='AppleWebKit/537.36 (KHTML, like Gecko) Chrome/'
+    g='AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.1.2 Safari/605.1.15/'
     h=random.randrange(73,100)
     i='0'
     j=random.randrange(4200,4900)
@@ -122,8 +109,8 @@ for xd in range(10000):
     l='Mobile Safari/537.36'
     uaku2=(f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}')
     ugen.append(uaku2)
-         
-class jalan:
+
+     class jalan:
     def __init__(self, z):
         for e in z + "\n":
             sys.stdout.write(e)
@@ -286,4 +273,5 @@ def mumitx(uid,pwx,tl):
 
 #-----[Run Menu]-----#
 mumit_menu()
-
+ 
+       
