@@ -110,7 +110,7 @@ for xd in range(10000):
     uaku2=(f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}')
     ugen.append(uaku2)
 
-     class jalan:
+class jalan:
     def __init__(self, z):
         for e in z + "\n":
             sys.stdout.write(e)
@@ -274,4 +274,3 @@ def mumitx(uid,pwx,tl):
 #-----[Run Menu]-----#
 mumit_menu()
  
-       
