@@ -17,13 +17,6 @@ B = '\x1b[1;94m' #
 U = '\x1b[1;95m' # 
 O = '\x1b[1;96m' #
 N = '\x1b[0m' #
-now = datetime.now()
-dt_string = now.strftime("%H:%M")
-current = datetime.now()
-ta = current.year
-bu = current.month
-ha = current.day
-today = date.today()
 my_color = [
  P, M, H, K, B, U, O, N]
 warna = random.choice(my_color)
@@ -63,6 +56,7 @@ def MR_VENOM():
 #------------------ bd clone def -------#
 def BD_CRACK():
 	print(' HOW ARE YOU BRO:)')
-    exit"Hi"
+    exit()
 #------------------end-----------------------#
 MR_VENOM()
+
