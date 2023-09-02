@@ -55,12 +55,11 @@ def MR_VENOM():
 	option=input(f' {B}[{warna}??{B}] CHOICE MENU')
 	if option in ['01','1']:
 		BD_CRACK()
-		else:
-			exit('Thanks for using dear:)')
+   else:
+		exit(' Thanks for using dear:)')
 #------------------ bd clone def -------#
 def BD_CRACK():
-	print('HOW ARE YOU BRO:)')
+	print(' HOW ARE YOU BRO:)')
 	 exit()
 #------------------end-----------------------#
 MR_VENOM()
-
