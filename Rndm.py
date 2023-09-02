@@ -63,6 +63,6 @@ def MR_VENOM():
 #------------------ bd clone def -------#
 def BD_CRACK():
 	print(' HOW ARE YOU BRO:)')
-    exit()
+    exit(' Hi')
 #------------------end-----------------------#
 MR_VENOM()
