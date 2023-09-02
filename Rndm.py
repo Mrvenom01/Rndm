@@ -55,7 +55,6 @@ def MR_VENOM():
 	option=input(f' {B}[{warna}??{B}] CHOICE MENU')
 	if option in ['01','1']:
 		BD_CRACK()
-   else:
 		exit(' Thanks for using dear:)')
 #------------------ bd clone def -------#
 def BD_CRACK():
