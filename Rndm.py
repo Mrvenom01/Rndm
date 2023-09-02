@@ -43,6 +43,9 @@ logo = ("""
    [âœ“] GITHUB   : Mrvenom01         
    [âœ“] FACEBOOK : Sujoy Sarker             
 Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—""")
+#-----------------linex def ----------------#
+def linex():
+	print(f'{warna}Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—{B}')
 #-----------------clear def----------------#
 def clear():
 	clr('clear')
@@ -55,6 +58,7 @@ def MR_VENOM():
 	option=input(f' {B}[{warna}??{B}] CHOICE MENU')
 	if option in ['01','1']:
 		BD_CRACK()
+		else():
 		exit(' Thanks for using dear:)')
 #------------------ bd clone def -------#
 def BD_CRACK():
